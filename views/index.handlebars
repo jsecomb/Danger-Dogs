@@ -1,24 +1,27 @@
-<h1>NICE BURGERS!</h1>
+<h1>Welcome to Darren's Day Old Dogs!</h1>
 
-<h2>Burgers that cause diarrhea</h2>
+<h2>Dogs that have not been eaten</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-        <h4>{{this.burger_name}}</h4>
-        <button type="button" class="eat btn btn-danger" id="eat">Eat it</button>
+        <span style='font-size:20px;'>
+          <h4>&#x1F32D;{{this.burger_name}}</h4>
+          <button class="eat btn btn-danger" data-id="{{id}}">Eat it</button>
+        </span>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers that don't cause diarrhea</h2>
+<h2>Dogs that have been eaten</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
     <h6 class="burger-item">
-        <h4>{{this.burger_name}}</h4>
-        <button type="button" class="eat btn btn-danger" id="eat">Eat it</button>
+        <span style='font-size:20px;'>
+          <h4>&#x1F92E;{{this.burger_name}}</h4>
+        </span>
     </h6>
     {{/if}}
   {{/each}}
@@ -34,9 +37,54 @@
 
   <div class="form-group">
     <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Not yet<br>
-    <input type="radio" name="devoured" value="0"> Yes Mam
+    <input type="radio" name="devoured" value="0" checked> Not yet<br>
+    <input type="radio" name="devoured" value="1"> Yes Mam
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" id="submit">Add Burger</button>
 </form>
+
+<script>
+  $("#submit").on("click", function(event){
+    event.preventDefault();
+    let burgerName = $("#burgerName").val();
+    let devoured = $("[name=devoured]:checked").val().trim()
+
+    let newBurger = {
+      burger_name: burgerName,
+      devoured: devoured
+    }
+    $.ajax("/api/burgers",{
+      type: "POST",
+      data: newBurger
+    }).then(function(){
+      console.log("you have added a burger")
+      location.reload();
+    })
+  })
+
+  $(".eat").on("click", function(event) {
+    var id = $(this).data("id");
+    console.log($(this).data("id"))
+    console.log("eatem")
+    
+    var burgerEaten = {
+      devoured: 1
+    };
+
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: burgerEaten
+    }).then(
+      function() {
+        console.log("You gettin full now");
+        location.reload();
+      }
+    );
+  });
+
+  
+
+
+
+</script>
