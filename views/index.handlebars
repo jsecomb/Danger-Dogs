@@ -1,19 +1,19 @@
 <h1>Welcome to Darren's Day Old Dogs!</h1>
 
-<h2>Dogs that have not been eaten</h2>
+<h2>Dogs that have not been tasted</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
         <span style='font-size:20px;'>
           <h4>&#x1F32D;{{this.burger_name}}</h4>
-          <button class="eat btn btn-danger" data-id="{{id}}">Eat it</button>
+          <button class="eat btn btn-danger" data-id="{{id}}">Try it</button>
         </span>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Dogs that have been eaten</h2>
+<h2>Dogs that have been tasted</h2>
 
 <ul>
   {{#each burgers}}
@@ -21,17 +21,18 @@
     <h6 class="burger-item">
         <span style='font-size:20px;'>
           <h4>&#x1F92E;{{this.burger_name}}</h4>
+          <button class="throwAway btn btn-danger" data-id="{{id}}">Throw it away</button>
         </span>
     </h6>
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>Add a Dog</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
+    <label for="ca">Dog Name:</label>
     <input type="text" id="burgerName" name="name">
   </div>
 
@@ -41,7 +42,7 @@
     <input type="radio" name="devoured" value="1"> Yes Mam
   </div>
 
-  <button type="submit" id="submit">Add Burger</button>
+  <button type="submit" id="submit">Add Dog</button>
 </form>
 
 <script>
@@ -58,16 +59,14 @@
       type: "POST",
       data: newBurger
     }).then(function(){
-      console.log("you have added a burger")
+      alert("you have added a dog")
       location.reload();
     })
   })
 
   $(".eat").on("click", function(event) {
     var id = $(this).data("id");
-    console.log($(this).data("id"))
-    console.log("eatem")
-    
+   
     var burgerEaten = {
       devoured: 1
     };
@@ -77,14 +76,23 @@
       data: burgerEaten
     }).then(
       function() {
-        console.log("You gettin full now");
+        alert("You don't feel so good now");
         location.reload();
       }
     );
   });
 
-  
-
-
+  $(".throwAway").on("click", function(event) {
+    var id = $(this).data("id");
+    
+    $.ajax("/api/burgers/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        alert("You don't want this dog");
+        location.reload();
+      }
+    );
+  });
 
 </script>

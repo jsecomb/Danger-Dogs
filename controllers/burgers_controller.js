@@ -37,4 +37,15 @@ router.put("/api/burgers/:id", function(req, res) {
     );
   });
 
+  router.delete("/api/burgers/:id", function(req, res) {
+    var where = "id=" + req.params.id;
+    
+    burger.deleteOne(
+      where,
+      function(result) {
+        res.json({ id: result.insertId });
+      }
+    );
+  });
+
 module.exports = router;
