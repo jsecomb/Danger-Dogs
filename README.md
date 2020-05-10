@@ -1,12 +1,12 @@
-# Homework13 by Julian Secomb 
+# burger by Julian Secomb 
     
-    [![HitCount](http://hits.dwyl.com/{jsecomb}/{Homework13}.svg)](http://hits.dwyl.com/{jsecomb}/{Homework13})
-    ![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/Homework13?style=flat-square)
-    ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsecomb/Homework13?style=flat-square)
+    [![HitCount](http://hits.dwyl.com/{jsecomb}/{burger}.svg)](http://hits.dwyl.com/{jsecomb}/{burger})
+    ![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/burger?style=flat-square)
+    ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsecomb/burger?style=flat-square)
     
     ## Description: 
     
-    Blank
+    NA
     
     ---
     
