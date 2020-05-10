@@ -1,16 +1,16 @@
 # burger by Julian Secomb 
     
-    [![HitCount](http://hits.dwyl.com/{jsecomb}/{burger}.svg)](http://hits.dwyl.com/{jsecomb}/{burger})
-    ![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/burger?style=flat-square)
-    ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsecomb/burger?style=flat-square)
+[![HitCount](http://hits.dwyl.com/{jsecomb}/{burger}.svg)](http://hits.dwyl.com/{jsecomb}/{burger})
+![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/burger?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsecomb/burger?style=flat-square)
     
-    ## Description: 
+## Description: 
     
-    NA
+NA
     
-    ---
+---
     
-    ## Table of Contents:
+## Table of Contents:
     * [Installation](#installation)
     * [Usage](#usage)
     * [License](#license)
