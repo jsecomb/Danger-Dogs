@@ -1,3 +1,37 @@
-h1{
+*{
     font-family: fantasy;
 }
+
+h1,h2{
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+h2{
+    text-decoration: underline; 
+}
+
+h4{
+    padding-top:5px;
+}
+
+.jumbotron{
+    padding:10px;
+    margin:16px;
+    background-color:#dc3545;
+}
+
+button{
+    margin: 10px;
+}
+
+#burgerName{
+    border-radius: 5px;
+    border-style: dashed;
+}
+
