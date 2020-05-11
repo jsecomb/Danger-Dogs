@@ -6,61 +6,72 @@
     
 ## Description: 
     
-NA
+Danger Dogs is an app that lets users input the names of hot dogs they'd like to eat, taste each hot dog, and then throw the hot dog away. It uses MySQL, Node, Express, Handlebars and an ORM to allow the user to add, update, delete and view hot dogs in the database. The app was written using the MVC design pattern.
+
+Deployed [here]("https://secret-journey-11983.herokuapp.com/")
     
 ---
     
 ## Table of Contents:
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Resources](#resources)
-    * [Tests](#tests)
-    * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Resources](#resources)
+* [Tests](#tests)
+* [Questions](#questions)
     
-    ---
+---
     
-    ## Istallation: 
+## Istallation: 
     
-    (Describe how to install application here)
+No installation required.
     
-    ---
+---
     
-    ## Usage: 
+## Usage: 
     
-    (Describe how to use application here)
+Add hot dogs using the input field, move hot dog to the "already tasted" column with the "try it" button and delete with the "throw it away" button.
+
+![Danger Dogs](https://i.imgur.com/dbR0IBo.png?2)
     
-    ---
+---
     
-    ## License: 
+## License: 
     
-    Please contact Julian Secomb (contact info below) regarding licensing.
+Please contact Julian Secomb (contact info below) regarding licensing.
     
-    Copyright © 2020 Julian Secomb
+Copyright © 2020 Julian Secomb
     
-    ---
+---
     
-    ## Contributing:
+## Contributing:
     
-    Please contact Julian Secomb (contact info below) regarding contributions.
+Please contact Julian Secomb (contact info below) regarding contributions.
     
-    ---
+---
     
-    ## Resources:
+## Resources:
     
-    (Describe resources used here)
+App written Javascript, using node.js and MySQL.
+
+The following NPM modules were used:
+* MySQL
+* express
+* express-handlebars
+
+App deployed on Heroku using JawsDB.
     
-    ---
+---
     
-    ## Tests:
+## Tests:
     
-    (Describe resources used here)
+(Describe resources used here)
     
-    ---
+---
     
-    ## Questions:
+## Questions:
     
-    If you have any questions, please contact Julian Secomb at hoodooprojects@gmail.com;
+If you have any questions, please contact Julian Secomb at hoodooprojects@gmail.com;
     
-    <img src="https://avatars3.githubusercontent.com/u/59972103?v=4" alt="jsecomb"/>
+<img src="https://avatars3.githubusercontent.com/u/59972103?v=4" alt="jsecomb"/>
