@@ -1,4 +1,4 @@
-# burger by Julian Secomb 
+# Danger Dogs by Julian Secomb 
     
 [![HitCount](http://hits.dwyl.com/{jsecomb}/{burger}.svg)](http://hits.dwyl.com/{jsecomb}/{burger})
 ![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/burger?style=flat-square)
