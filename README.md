@@ -8,7 +8,7 @@
     
 Danger Dogs is an app that lets users input the names of hot dogs they'd like to eat, taste each hot dog, and then throw the hot dog away. It uses MySQL, Node, Express, Handlebars and an ORM to allow the user to add, update, delete and view hot dogs in the database. The app was written using the MVC design pattern.
 
-Deployed [here]("https://secret-journey-11983.herokuapp.com/")
+Deployed [here](https://secret-journey-11983.herokuapp.com/)
     
 ---
     
@@ -66,7 +66,7 @@ App deployed on Heroku using JawsDB.
     
 ## Tests:
     
-(Describe resources used here)
+No tests were run other than basic use tests of the application.
     
 ---
     
